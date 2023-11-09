@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Shadows+Into+Light&display=swap');
+/**font-family: 'Playfair Display', serif;
+font-family: 'Shadows Into Light', cursive;**/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu-header {
+    position: absolute; 
+    width: 100%;
+    background-color: rgba(255, 207, 213, 0.7);
+    z-index: 2; /* Esto me permite que el header esté en la parte superior */
+
+}
+
+.menu-header a {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+}
+
+.banner {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.titulobanner {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 300px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 1;
+    font-size: 80px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 10px;
+}
+
+.maineindex{
+    background-image: url('imagenes/fondopetalo.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija el fondo para que se desplace con la página */
+    background-position: center; /* Centra la imagen en la ventana */
+  }
+
+.contenidodelambiente {
+    text-align: center;
+    padding: 80px 80px; 
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+   
+}
+
+.contenidodelambiente h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+}
+
+.imagenesinterior {
+    display: flex; /* Usa flexbox para alinear las imágenes horizontalmente */
+    justify-content: center; /* Centra horizontalmente las imágenes */
+}
+
+.imagenesinterior img {
+    width: 50%; /* Establece el mismo ancho para las imágenes (ajusta el valor según tus preferencias) */
+    height: auto; /* Asegura que la relación de aspecto se mantenga */
+    margin: 10px; /* Agrega margen entre las imágenes (ajusta el valor según tus preferencias) */
+}
+
+
+/* Estilos para el enlace de reserva */
+a {
+    display: block; /* Convierte el enlace en un bloque para que aparezca debajo de las imágenes */
+    text-align: center; /* Centra horizontalmente el enlace */
+    margin-top: 10px; /* Agrega un poco de espacio superior (ajusta el valor según tus preferencias) */
+    text-decoration: none; /* Elimina la decoración de enlace si es necesario */
+    color: #000; /* Cambia el color del enlace si es necesario */
+}
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.cocteles {
+    flex: 1; /* El contenido ocupa el espacio disponible horizontalmente */
+    padding: 20px;
+    text-align: center;
+    max-height: 100%;
+}
+.cocteles h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    padding: 20px;
+    
+}
+
+.imagen_de_referencia_coctel {
+    flex: 1; /* El contenido ocupa el espacio disponible horizontalmente */
+    padding: 0px;
+    width: 100%;
+}
+.imagen_de_referencia_coctel img {
+    max-width: 100%; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Asegura que la relación de aspecto se mantenga */
+    display: block;
+
+}
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* Cambia la dirección de los elementos en dispositivos móviles */
+    }
+    .cocteles {
+        order: 1; /* Cambia el orden del elemento de texto */
+    }
+    .imagen_de_referencia_coctel {
+        order: 2; /* Cambia el orden de la imagen */
+    }
+    a {
+        order: 3; /* Cambia el orden del enlace */
+    }
+}
+
+/* Estilos para la sección de música */
+
+.musica {
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.musica h2 {
+    font-size: 35px;
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 30px;
+    font-weight: bold;
+    color: rgb(189, 3, 148);
+}
+
+.musica p {
+    font-size: 20px;
+}
+
+/* Estilos para la playlist de Spotify */
+.playlist {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+/* FOOTER*/
+
+.footer {
+    background-image: url('/imagenes/fondofooter.jpg');
+    background-size: cover;
+    background-position: center top;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img {
+    max-width: 145px;
+    margin: 0 auto;
+    display: block;
+}
+.logo p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.contacto,
+.mapa-sitio {
+    flex: 1;
+    padding: 20px;
+    
+}
+
+.contacto h3,
+.mapa-sitio h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.redes.sociales {
+    text-align: center; /* Centrar los logotipos */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.redes.sociales a {
+    margin: 0 10px; /* Espacio horizontal entre los logotipos */
+    text-decoration: none; /* Quitar la decoración de los enlaces */
+}
+
+.contacto img {
+    display: flexbox;
+    width: 40px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/*FIN FOOTER*/
+
+/*PAGINA EVENTOS*/
+
+.bannerevento img{
+    max-width: 100%;
+}
+
+.row{
+
+    padding-bottom: 60px;
+}
+.row-cols-1{
+    text-align: center;
+
+}
+
+.card{
+    margin: 10px;
+}
+
+.introduccionEventos p{
+        text-align: center;
+        max-width: 100%; /* Cambiamos 'width' por 'max-width' */
+        margin: 0 auto; /* Añadimos margen automático izquierdo y derecho para centrar */
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        padding: 60px 30px;
+        color: white;
+
+}
+
+.mainevento {
+    background-image: url('imagenes/fondopetalo.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija el fondo para que se desplace con la página */
+    background-position: center; /* Centra la imagen en la ventana */
+  }
